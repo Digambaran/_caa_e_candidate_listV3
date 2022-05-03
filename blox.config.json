@@ -1,1 +1,1 @@
-{"name":"e_candidate_list","type":"ui-elements","source":{"https":"https://github.com/candidate-app/_ca_e_candidate_list","ssh":"git@github.com:candidate-app/_ca_e_candidate_list.git"},"language":"nodejs","start":"npx webpack-dev-server","build":"npx webpack","postPull":"npm i"}
+{"name":"e_candidate_list","type":"ui-elements","source":{"https":"https://github.com/candidate-app/_ca_e_candidate_list.git","ssh":"git@github.com:candidate-app/_ca_e_candidate_list.git"},"language":"nodejs","start":"npx webpack-dev-server","build":"npx webpack","postPull":"npm i"}

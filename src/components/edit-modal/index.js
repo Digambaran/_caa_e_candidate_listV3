@@ -1,5 +1,5 @@
 import React from 'react';
-import { useFederatedComponent } from 'ab-federation-helpers';
+import { useFederatedComponent } from 'blox-js-sdk';
 
 const EditModal = (props) => {
   const { candidateNewModal, current, handleCandidateNewModal } = props;
@@ -23,13 +23,13 @@ const EditModal = (props) => {
       {errorLoading
         ? `Error loading module "${module}"`
         : FederatedComponent &&
-          props && (
-            <FederatedComponent
-    candidateNewModal={candidateNewModal}
-    current={current}
-    handleCandidateNewModal={handleCandidateNewModal}
-            />
-          )}
+        props && (
+          <FederatedComponent
+            candidateNewModal={candidateNewModal}
+            current={current}
+            handleCandidateNewModal={handleCandidateNewModal}
+          />
+        )}
     </React.Suspense>
   );
 };
