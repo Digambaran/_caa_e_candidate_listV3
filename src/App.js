@@ -1,9 +1,9 @@
-import React from 'react'
-import e_candidate_list from './e_candidate_list'
+import React, { Suspense } from "react";
+import Candidates from "./components/candidates/Candidates.js";
 export default function App() {
   return (
-    <div>
-      <e_candidate_list/>
-    </div>
-  )
+    <Suspense fallback="">
+      <Candidates />
+    </Suspense>
+  );
 }
