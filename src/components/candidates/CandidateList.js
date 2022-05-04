@@ -85,14 +85,14 @@ const CandidateList = (props) => {
   return (
     <div>
       <div className='float-left flex w-full justify-between'>
-        <div className='text-lg font-bold md:text-xl'>All Members</div>
+        <div className='text-lg font-bold md:text-xl'>All Candidatesss</div>
         <button
           type='button'
           onClick={() => setCandidateNewModal(true)}
           className='flex items-center rounded-lg bg-[#0C5DFF] py-2 px-4 text-sm font-bold text-white hover:bg-[#0A4ACC] focus:outline-none md:text-base'
         >
           <img className='mr-2.5' src={PlusIcon} alt='' />
-          Add New Member
+          Add New Candidatess
         </button>
       </div>
       {!loading ? (
