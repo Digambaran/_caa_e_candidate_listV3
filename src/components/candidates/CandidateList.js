@@ -43,7 +43,7 @@ const CandidateList = (props) => {
     setLoading(true);
     try {
       const response = await Axios.post(
-        `${process.env.BLOX_FUNCTION_URL_DEV}/listCandidates`
+        `${process.env.BLOX_FUNCTION_URL_DEV}/f_read_candidates`
         // {
         //   headers: {
         //     Authorization: `Bearer ${token}`,
@@ -62,7 +62,7 @@ const CandidateList = (props) => {
   const onDelete = async () => {
     try {
       await Axios.post(
-        `${process.env.BLOX_FUNCTION_URL_DEV}/removeCandidate`,
+        `${process.env.BLOX_FUNCTION_URL_DEV}/f_remove_candidate`,
         {
           id: selected,
         }
@@ -122,7 +122,7 @@ const CandidateList = (props) => {
                   <div
                     onClick={(e) => e.stopPropagation()}
                     className='relative flex-shrink-0'
-                    // ref={actionDropContainer}
+                  // ref={actionDropContainer}
                   >
                     <img
                       onClick={() => handleActionDropdown(item)}
@@ -131,9 +131,8 @@ const CandidateList = (props) => {
                       alt=''
                     />
                     <div
-                      className={`absolute top-full right-2 z-10 mt-1 ${
-                        actionDropdown === item ? '' : 'hidden'
-                      }`}
+                      className={`absolute top-full right-2 z-10 mt-1 ${actionDropdown === item ? '' : 'hidden'
+                        }`}
                     >
                       <div className='border-primary float-left min-w-[84px] overflow-hidden rounded-lg border bg-white shadow-lg'>
                         <div className='float-left w-full py-1 text-sm'>
