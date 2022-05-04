@@ -13,8 +13,8 @@ const __dirname = path.resolve();
 
 const port =
   Number(
-    process.env.BLOX_ENV_URL_candidate_listing.substr(
-      process.env.BLOX_ENV_URL_candidate_listing.length - 4
+    process.env.BLOX_ENV_URL_e_candidate_list.substr(
+      process.env.BLOX_ENV_URL_e_candidate_list.length - 4
     )
   ) || 3001;
 
